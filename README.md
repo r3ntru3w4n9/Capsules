@@ -38,6 +38,7 @@ The reason for this restructure is that it is better for generalizing the entire
 
 #### Usage
 
+```tex
 usage: 
 main.py 
 [-h]
@@ -215,7 +216,7 @@ losses:
 
 ​		the weight of reconstruction loss, which is not included in the above formula
 
-
+```
 
 ##### Details
 
