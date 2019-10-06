@@ -16,7 +16,7 @@ More traditional deep learning models define **layers**, and each layer is consi
 
 This implementation is a **generalization** of the `CapsNet` implementation. The original `CapsNet` is best described as the image below. The image is from the original paper.
 
-![img](/home/forerunner/git/capsule/contents/1*uItEGzY1I9NK6hl1u4hPYg.png)
+![img](contents/1*uItEGzY1I9NK6hl1u4hPYg.png)
 
 Most on-line implementation does not make a generalized version of the `CapsNet`, that is, the hyper-parameters are all hard coded into the architecture of the model, with no easy way to modify them. They typically has three parts:
 
