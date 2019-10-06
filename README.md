@@ -39,15 +39,25 @@ The reason for this restructure is that it is better for generalizing the entire
 #### Usage
 
 usage: main.py [-h] [-Cc CONV_CHANNELS [CONV_CHANNELS ...]]
+
                [-Ck CONV_KERNELS [CONV_KERNELS ...]]
+               
                [-Cs CONV_STRIDES [CONV_STRIDES ...]]
+               
                [-ch CAPS_CHANNELS [CAPS_CHANNELS ...]]
+               
                [-cc CAPS_CAPSULES [CAPS_CAPSULES ...]] [-ci CAPS_ITERS]
+               
                [-dl DECODER_LAYERS [DECODER_LAYERS ...]] [-am AUG_MEAN]
+               
                [-as AUG_STD] [-ar AUG_ROTATION] [-ab AUG_BRIGHTNESS]
+               
                [-ac AUG_CONTRAST] [-at AUG_SATURATION] [-lt TC] [-ll LMBDA]
+               
                [-lb BOUND BOUND] [-lw RECON_WEIGHT] [-e EPOCHS] [-b BATCH]
+               
                [-lr LEARNING_RATE] [-mg MAX_GRAD] [-d DEVICE] [-P PROCESSES]
+               
                [-r DATASET_ROOT] [-s SAVE] [-o OUT] [-p] [-tnan] [-pm]
 
 optional arguments:
@@ -74,7 +84,7 @@ optional arguments:
 
   -d DEVICE, --device DEVICE
 
-​		device to train model on ('cpu' or 'cuda:N', N is a positive integer)
+​		device to train model on ('cpu' or 'cuda' or 'cuda:N', N is a non negative integer)
 
   -P PROCESSES, --processes PROCESSES
 
