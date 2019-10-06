@@ -218,7 +218,9 @@ losses:
 
 ```
 
-##### Details
+#### Details
+
+```reStructuredText
 
 :class: `FeatureExtractor`
 
@@ -396,6 +398,7 @@ losses:
 
 ​    \* reconstructed: reconstructed images
 
+```
 
 
 [paper]:https://arxiv.org/abs/1710.09829
