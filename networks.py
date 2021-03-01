@@ -226,11 +226,11 @@ class Route(nn.Module):
     [Input]
     * U_hat: torch.Tensor
         (N, channels, num_capsules, prev_capsules)
-    
+
     [Output]
     * V: torch.Tensor
         (N, channels, num_capsules)
-    
+
     [Attribute]
     * num_iters: int
     * B: torch.Tensor
@@ -262,7 +262,7 @@ class CapsuleLayer(nn.Module):
     [Input]
     * U_prev: torch.Tensor
         (N, channel, prev_capsules)
-    
+
     [Output]
     * U_self: torch.Tensor
         (N, channel, num_capsules)
@@ -302,7 +302,7 @@ class Cequential(nn.Sequential):
     [Input]
     * U_prev_0: torch.Tensor
         (N, channel, prev_capsules)
-    
+
     [Output]
     * U_self_-1: torch.Tensor
         (N, channel, num_capsules)
@@ -337,7 +337,7 @@ class CapsDecoder(nn.Module):
     [Input]
     * U_self_-1
         (N, channel, labels)
-    
+
     [Output]
     * recon
         (N, C, H, W)
@@ -374,7 +374,7 @@ class CapsNet(nn.Module):
     [Input]
     * Images
         (N, C, H, W)
-    
+
     [Output]
     * predicted
         (N, channel, labels)
